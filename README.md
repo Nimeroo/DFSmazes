@@ -24,4 +24,4 @@ Generates random mazes that the user can complete under a limited amount of trie
 
 - Win Screen
 
-![Maze Win Screen](https://imgur.com/a/hmXBBb7)
+![Maze Win Screen](https://imgur.com/5dwRJqF)
