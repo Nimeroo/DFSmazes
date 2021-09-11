@@ -12,15 +12,15 @@ Generates random mazes that the user can complete under a limited amount of trie
 
 - Start Screen
 
-![Maze Start Screen](https://imgur.com/a/0Q3ilg5)
+![Maze Start Screen](https://i.imgur.com/yNnJoPx.png)
 
 - Play Session Screen
 
-![Maze Play Screen](https://imgur.com/a/HWkcmyd)
+![Maze Play Screen](https://i.imgur.com/aFk9ukj.png)
 
 - Lose Screen
 
-![Maze Lose Screen](https://imgur.com/a/V8LnJPF)
+![Maze Lose Screen](https://i.imgur.com/s6I7A1g.png)
 
 - Win Screen
 
