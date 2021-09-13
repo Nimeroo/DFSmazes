@@ -9,10 +9,15 @@ class Maze {
         this.grid = [];
         this.array = [];
     }
+
+    create(){
+
+    }
 }
 
 class Section{
-    constructor(parentGrid, rowIndex, columnIndex){
+    constructor(parentArea, parentGrid, rowIndex, columnIndex){
+        this.parentArea = parentArea;
         this.parentGrid = parentGrid;
         this.rowIndex = rowIndex;
         this.columnIndex = columnIndex;
