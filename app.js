@@ -11,7 +11,16 @@ class Maze {
     }
 
     create(){
-
+        let currNode;
+        for(let row = 0; row < this.rows; row++){
+            let rowArray = []
+            for(let col = 0; col < this.columns; col++){
+                let section = new Section(this.area, this.grid, this.size);
+                rowArray.push(section);
+            }
+            this.grid.push(rowArray)
+        }
+        currNode = this.grid[0][0];
     }
 }
 
