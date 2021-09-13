@@ -2,9 +2,10 @@ const maze = document.getElementById("maze");
 const ctx = maze.getContext("2d");
 
 class Maze {
-    constructor(rows, columns) {
+    constructor(rows, columns, area) {
         this.rows = rows;
         this.columns = columns;
+        this.area = area
         this.grid = [];
         this.array = [];
     }
