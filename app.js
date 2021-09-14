@@ -38,4 +38,33 @@ class Section{
             left: true,
         }
     }
+
+    createTopWall(size, columns, rows, x, y){
+        ctx.beginPath();
+        ctx.moveTo(x , y);
+        ctx.lineTo(x + size / columns, y);
+        ctx.stroke()
+    }
+
+    createBottomWall(size, columns, rows, x, y){
+        ctx.beginPath()
+        ctx.moveTo(x , y + size / rows);
+        ctx.lineTo(x + size / columns, y + size / rows);
+        ctx.stroke();
+    }
+
+    createRightWall(size, columns, rows, x, y){
+        ctx.beginPath();
+        ctx.moveTo(x, y + size / rows);
+        ctx.lineTo(x + size / columns, y + size / rows);
+        ctx.stroke();
+    }
+
+    createLeftWall(size, columns, rows, x, y){
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x, y + size / rows);
+        ctx.stroke();
+    }
 }
+
