@@ -66,5 +66,22 @@ class Section{
         ctx.lineTo(x, y + size / rows);
         ctx.stroke();
     }
+
+    drawSection(size, columns, rows){
+        let x = this.columnIndex * size / columns;
+        let y = this.columnIndex * size / rows;
+        
+        ctx.fillStyle = "black";
+        ctx.strokeStyle = "white";
+
+        let wall;
+        switch(wall) {
+            case this.sides.top : this.drawTopWall(size, columns, rows, x, y);
+            case this.sides.bottom : this.drawBottomWall(size, columns, rows, x, y);
+            case this.sides.right : this.drawRightWall(size, columns, rows, x, y);
+            case this.sides.left : this.drawLeftWall(size, columns, rows, x, y);
+        }
+        if(this.visited) ctx.fillRect(x, y, size / columns, size / rows)
+    }
 }
 
